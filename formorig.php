@@ -1,25 +1,27 @@
  <!DOCTYPE html>
  <HTML>
  <HEAD>
- <STYLE>
- h2 {
-	text-align: center;
-	font-family: Gill Sans, sans-serif;}
- div {
-		font-family: Gill Sans, sans-serif;
+ <title>Meeting Request Form</title>
+	 <LINK rel="icon" type="image/x-icon" href="favicon.ico">
+	 <STYLE>
+	 h2 {
 		text-align: center;
-      }
- label {
-		font-family: Gill Sans, sans-serif;
-        display: inline-block;
-        text-align: right;
-      }
-	  
- </STYLE>
+		font-family: Gill Sans, sans-serif;}
+	 div {
+			font-family: Gill Sans, sans-serif;
+			text-align: center;
+		  }
+	 label {
+			font-family: Gill Sans, sans-serif;
+			display: inline-block;
+			text-align: right;
+		  }
+		  
+	 </STYLE>
  </HEAD>
  <BODY>
  <div></div>
- <FORM action="formshow.m" method="post">
+ <FORM action="submitted.html" method="post">
  <BR><BR><BR>
   <h2>Meeting Request Form</h2>
      
@@ -32,8 +34,8 @@
 	<div><LABEL for="purpose">Purpose of Visit: </label>
 	<SELECT name="purpose" id="purpose" required>
 	  <OPTION value="">-----Select-----</OPTION>
-	  <OPTION value="Grade Verification">Grades</OPTION>
-	  <OPTION value="Research Consultation">Consultation</OPTION>
+	  <OPTION value="Grade Verification">Grade Verification</OPTION>
+	  <OPTION value="Research Consultation">Research Consultation</OPTION>
 	  <OPTION value="Inquiry">Inquiry</OPTION>
 	  <OPTION value="Make-up Exam">Make-up Exam</OPTION>
 	  <OPTION value="Others">Others</OPTION>
