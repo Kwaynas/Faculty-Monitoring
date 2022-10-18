@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Oct 18, 2022 at 11:50 AM
+-- Generation Time: Oct 18, 2022 at 08:18 PM
 -- Server version: 10.4.24-MariaDB
 -- PHP Version: 8.1.6
 
@@ -82,6 +82,7 @@ CREATE TABLE `studreq` (
   `stud_name` varchar(255) DEFAULT NULL,
   `stud_num` varchar(255) DEFAULT NULL,
   `email` varchar(255) DEFAULT NULL,
+  `subjectsection` varchar(255) NOT NULL,
   `room` varchar(255) DEFAULT 'TBA',
   `prop_date` varchar(255) DEFAULT NULL,
   `prop_time_start` varchar(255) NOT NULL,
@@ -89,6 +90,7 @@ CREATE TABLE `studreq` (
   `fin_date` varchar(255) DEFAULT 'TBA',
   `fin_time_start` varchar(255) NOT NULL DEFAULT 'TBA',
   `fin_time_end` varchar(255) NOT NULL DEFAULT ' ',
+  `stdmessage` varchar(255) NOT NULL,
   `message` text NOT NULL,
   `isdone` tinyint(1) NOT NULL DEFAULT 0
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
